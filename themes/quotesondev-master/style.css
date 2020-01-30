@@ -234,6 +234,9 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
+html, body {
+  height: 100vh; }
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -604,8 +607,49 @@ object {
   height: 100px;
   background-color: #222222; }
   .nav-main-container .website-logo {
-    padding-left: 1.5rem;
-    width: 30rem; }
+    padding-left: 1rem;
+    width: 300px;
+    margin-top: 50px; }
+    @media screen and (min-width: 600px) {
+      .nav-main-container .website-logo {
+        width: 500px;
+        margin-top: 90px; } }
+
+@media screen and (min-width: 600px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.copyright {
+  color: white;
+  padding-left: 10px; }
+  @media screen and (min-width: 600px) {
+    .copyright {
+      margin: 0;
+      font-size: 1.5rem; } }
+  .copyright a {
+    text-decoration: none; }
+  .copyright .website-author {
+    color: #00cc00; }
+    .copyright .website-author:hover {
+      cursor: pointer; }
+
+.menu-menu-1-container ul {
+  margin: 0;
+  padding: 0; }
+
+.menu-menu-1-container li {
+  padding: 0px 10px;
+  display: inline-block;
+  border-right: 1px solid white; }
+  @media screen and (min-width: 600px) {
+    .menu-menu-1-container li {
+      font-size: 1.5rem; } }
+
+.menu-menu-1-container a {
+  text-decoration: none;
+  color: #00cc00; }
 
 html {
   font-size: 62.5%; }
@@ -613,3 +657,31 @@ html {
 body {
   background: #222222;
   font-size: 1.6rem; }
+
+.quotes-container .main-quote {
+  color: white;
+  font-size: 1.6rem;
+  padding: 10px; }
+  @media screen and (min-width: 600px) {
+    .quotes-container .main-quote {
+      font-size: 2.6rem;
+      padding: 15px; } }
+
+.main-button {
+  background-color: #222222;
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border: 2px solid #00cc00;
+  color: #00cc00;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  margin: 30px 0px 70px 10px; }
+  @media screen and (min-width: 600px) {
+    .main-button {
+      font-size: 2rem;
+      padding: 15px 40px; } }
+  .main-button:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #00cc00; }

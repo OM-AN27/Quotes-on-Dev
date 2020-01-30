@@ -16,11 +16,11 @@ get_header(); ?>
 							'order'    => 'ASC',  'posts_per_page' => 1 );
 							$posts = get_posts( $args ); // returns an array of posts
 							// var_dump($posts);
-							echo '<h1 class="main-quote">' . $posts[0]->post_content .  ' </h1>';
+							echo '<h1>' . $posts[0]->post_content .  ' </h1>';
 						?>
 			</h1>			
 
-			<button class='main-button'>Show Me Another!</button>
+			<button class='main-button'>Show me another!</button>
 			
 		</section>
 		</main><!-- #main -->

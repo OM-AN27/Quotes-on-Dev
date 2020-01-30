@@ -19,7 +19,7 @@
 
 	<nav class='nav-main-container'>
 
-	<a href='http://localhost/Quotes-on-dev/home'><img class='website-logo' src=<?php echo get_stylesheet_directory_uri() . '/images/assets/qod-logo.svg'; ?> ></a>
+	<a href='http://localhost/Quotes-on-dev'><img class='website-logo' src=<?php echo get_stylesheet_directory_uri() . '/images/assets/qod-logo.svg'; ?> ></a>
 	
 	
 	</nav>
@@ -27,7 +27,7 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
-</body>
+
 
 
 

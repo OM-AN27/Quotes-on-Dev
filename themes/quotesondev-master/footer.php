@@ -10,10 +10,12 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class='footer-conatiner'>
-
+			<nav id="site-navigation" class="main-navigati on" role="navigation">
+                    
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
 				
-				</div>
+				<p class='copyright'>  Brought to you by <a href='#'><span class='website-author'>RED Academy</span></a>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

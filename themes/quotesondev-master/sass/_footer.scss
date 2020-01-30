@@ -1,1 +1,75 @@
+@mixin desktop {
+    @media screen and (min-width: $desktopSize) {
+        @content;
+    }
+}
 
+@mixin tablet {
+    @media screen and (min-width: $tabletSize) {
+        @content;
+    }
+}
+
+footer {
+    @include tablet {
+        display: flex;
+    }
+}
+
+
+.copyright {
+        
+    color: white;
+    padding-left: 10px;
+
+    @include tablet {
+        margin: 0;
+        font-size: 1.5rem;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .website-author {
+         color: $color_green-text;
+
+
+         &:hover {
+             cursor: pointer;
+         }
+
+    }
+}
+
+
+
+.menu-menu-1-container {
+
+   
+    ul  {
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    li {
+
+        padding: 0px 10px;
+        display: inline-block;
+        border-right: 1px solid white;
+        @include tablet {
+            font-size: 1.5rem;
+        }
+		
+	}
+	
+	a {
+		text-decoration: none;
+		color: $color_green-text;
+		
+    }
+    
+	
+    }
