@@ -634,6 +634,11 @@ object {
   width: 100%;
   height: 100px;
   background-color: #222222; }
+  @media screen and (min-width: 1024px) {
+    .nav-main-container {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .nav-main-container .website-logo {
     padding-left: 1rem;
     width: 300px;
@@ -642,6 +647,9 @@ object {
       .nav-main-container .website-logo {
         width: 500px;
         margin-top: 90px; } }
+    @media screen and (min-width: 1024px) {
+      .nav-main-container .website-logo {
+        width: 600px; } }
 
 @media screen and (min-width: 600px) {
   footer {
@@ -686,23 +694,36 @@ body {
   background: #222222;
   font-size: 1.6rem; }
 
+.quotes-container .font-awesome-quotes {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .quotes-container .font-awesome-quotes {
+      color: #00cc00;
+      width: 300px; } }
+
 .quotes-container .main-quote {
-  color: white;
+  color: #ffff;
   font-size: 1.6rem;
   padding: 10px; }
   @media screen and (min-width: 600px) {
     .quotes-container .main-quote {
       font-size: 2.6rem;
       padding: 15px; } }
+  @media screen and (min-width: 1024px) {
+    .quotes-container .main-quote {
+      text-align: center; } }
 
 .quotes-container .author-main-quote {
-  color: white;
+  color: #ffff;
   font-size: 1.6rem;
   padding: 10px; }
   @media screen and (min-width: 600px) {
     .quotes-container .author-main-quote {
       font-size: 2.6rem;
       padding: 15px; } }
+  @media screen and (min-width: 1024px) {
+    .quotes-container .author-main-quote {
+      text-align: center; } }
 
 .main-button {
   background-color: #222222;
@@ -728,7 +749,28 @@ body {
   color: #00cc00; }
 
 .page-header {
-  color: white; }
+  color: #ffff; }
 
 .page-content p {
-  color: white; }
+  color: #ffff; }
+
+.entry-title {
+  color: #ffff;
+  margin-top: 20px;
+  padding-left: 10px; }
+
+.wpcf7-form {
+  color: #ffff; }
+  .wpcf7-form label {
+    padding-left: 10px; }
+  .wpcf7-form .wpcf7-text {
+    color: #ffff;
+    background-color: #222222;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border: 2px solid #00cc00;
+    color: #00cc00;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    margin: 15px; }

@@ -18,6 +18,10 @@
 	height:100px;
 	background-color: $color_background-main;
 
+	@include desktop{
+		justify-content: center;
+	}
+
 	
 	.website-logo {
 		padding-left: 1rem;
@@ -28,6 +32,10 @@
 			width: 500px;
 			margin-top: 90px;
 
+		}
+
+		@include desktop{
+			width: 600px;
 		}
 	}
 

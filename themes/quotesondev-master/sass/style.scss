@@ -87,9 +87,21 @@ body {
 
 
 .quotes-container {
+
+	.font-awesome-quotes {
+
+		display: none;
+
+		@include desktop {
+			color: $color_green-text;
+			width: 300px;
+		}
+
+	}
+
 	
 	.main-quote {
-		color:white;
+		color:$text__white;
 		font-size: 1.6rem;
 		padding:10px;
 		@include tablet {
@@ -98,10 +110,15 @@ body {
 
 
 		}
+		@include desktop {
+
+			text-align: center;
+
+		}
 	}
 
 	.author-main-quote {
-		color:white;
+		color:$text__white;
 		font-size: 1.6rem;
 		padding:10px;
 		@include tablet {
@@ -109,6 +126,10 @@ body {
 			padding:15px;
 
 
+		}
+
+		@include desktop {
+			text-align: center;
 		}
 	}
 
@@ -140,6 +161,8 @@ body {
 		border-color: $color_green-text;
 	}
 
+	
+
 }
 
 // ABOUT 
@@ -155,13 +178,45 @@ body {
 }
 
 .page-header {
-	color: white;
+	color: $text__white;
 }
 
 .page-content {
 	p {
-		color:white
+		color:$text__white;
 	}
+}
+
+
+//SUBMIT A QUOTE 
+
+.entry-title {
+	color:$text__white;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+.wpcf7-form {
+	color: $text__white;
+	label {
+		padding-left: 10px;
+
+	}
+
+	.wpcf7-text  {
+	color: $text__white;
+	background-color:$color_background-main ;
+	font-size: 1.5rem;
+	padding: 10px 30px;
+	border: 2px solid $color_green-text;
+	color: $color_green-text;
+	box-shadow: none;
+	text-shadow: none;
+	margin: 15px;
+
+	}
+
+
 }
 
 
