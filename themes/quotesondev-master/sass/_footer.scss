@@ -20,6 +20,8 @@ footer {
 
 
 .site-footer {
+    font-family: 'Exo 2';
+		font-weight: 100;
     @include desktop {
         display: flex;
         justify-content: flex-end;

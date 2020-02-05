@@ -8,7 +8,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="archive-site-main" role="main">
+
+        <h1 class='archive-title'>archives</h1>
+
+
+        <h2 class='quotes-title'>quote authors</h2>
 
         <?php 
 
@@ -22,6 +27,8 @@ get_header(); ?>
         
     
 
+
+    <h3 class='categories-title'>categories</h3>
        <?php  $categories = get_categories( array(
     'orderby' => 'name',
     'parent'  => 0
@@ -34,6 +41,8 @@ foreach ( $categories as $category ) {
     );
 }
 ?>
+
+<h4 class='tags-title'>tags</h4>
 <?php
 $tags = get_tags($post->ID);  ?>
  

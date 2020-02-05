@@ -15,7 +15,7 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 				
-				<p class='copyright'>  Brought to you by <a href='#'><span class='website-author'>RED Academy</span></a>
+				<p class='copyright'>  Brought to you by <a href='https://redacademy.com/vancouver/' target='_blank'><span class='website-author'>RED Academy</span></a>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

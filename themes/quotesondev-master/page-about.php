@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			
 
 		<?php endwhile; // End of the loop. ?>
+		<i class="fa fa-smile"></i>
 
-         <p class='about-text'>This site is heavily inspired by Chris Coyler's <a class='quotes-link'><span class='quotes-on-design-site-link'>Quotes On Design</span></a>.</p>
+         <p class='about-text'>This site is heavily inspired by Chris Coyler's <a href='https://quotesondesign.com/' target='_blank' class='quotes-link'><span class='quotes-on-design-site-link'>Quotes On Design</span></a>.</p>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

@@ -657,15 +657,18 @@ object {
     display: -ms-flexbox;
     display: flex; } }
 
-@media screen and (min-width: 1024px) {
-  .site-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: 10rem; } }
+.site-footer {
+  font-family: 'Exo 2';
+  font-weight: 100; }
+  @media screen and (min-width: 1024px) {
+    .site-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-right: 10rem; } }
 
 .copyright {
   color: #ffff;
@@ -704,6 +707,14 @@ body {
   background: #222222;
   font-size: 1.6rem; }
 
+a {
+  text-decoration: none;
+  color: #00cc00; }
+  a:hover {
+    color: #0e850e; }
+  a:visited {
+    color: #00cc00; }
+
 .quotes-container .font-awesome-quotes {
   display: none; }
   @media screen and (min-width: 1024px) {
@@ -714,6 +725,8 @@ body {
 .quotes-container .main-quote {
   color: #ffff;
   font-size: 1.6rem;
+  font-family: 'Exo 2';
+  font-weight: 100;
   padding: 10px; }
   @media screen and (min-width: 600px) {
     .quotes-container .main-quote {
@@ -726,6 +739,8 @@ body {
 .quotes-container .author-main-quote {
   color: #ffff;
   font-size: 1.6rem;
+  font-family: 'Exo 2';
+  font-weight: 100;
   padding: 10px; }
   @media screen and (min-width: 600px) {
     .quotes-container .author-main-quote {
@@ -747,6 +762,8 @@ body {
 .main-button {
   background-color: #222222;
   font-size: 1.5rem;
+  font-family: 'Exo 2';
+  font-weight: 100;
   padding: 10px 40px;
   border: 2px solid #00cc00;
   color: #00cc00;
@@ -763,22 +780,43 @@ body {
             box-shadow: none;
     border-color: #00cc00; }
 
-@media screen and (min-width: 600px) {
-  .about-text {
-    font-size: 1.6rem; } }
-
-@media screen and (min-width: 1024px) {
-  .about-text {
-    text-align: center; } }
-
-.about-text .quotes-link {
-  text-decoration: none;
-  color: #00cc00; }
+.about-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100; }
+  @media screen and (min-width: 1024px) {
+    .about-site-main {
+      font-size: 2.1rem;
+      text-align: center; } }
+  @media screen and (min-width: 600px) {
+    .about-site-main .about-text {
+      font-size: 1.6rem; } }
+  .about-site-main .about-text .quotes-link {
+    text-decoration: none;
+    color: #00cc00; }
 
 .page-content p {
   color: #ffff; }
 
+.submit-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100;
+  color: #ffff;
+  margin: 30px 10px;
+  font-size: 1.3rem;
+  word-spacing: .5rem;
+  line-height: 2rem; }
+  @media screen and (min-width: 600px) {
+    .submit-site-main {
+      margin: 70px 10px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .submit-site-main {
+      font-size: 2rem;
+      text-align: center; } }
+
 .entry-title {
+  font-family: 'Exo 2';
+  font-weight: 100;
   color: #ffff;
   margin-top: 50px;
   padding-left: 10px; }
@@ -787,7 +825,8 @@ textarea {
   width: 80%; }
 
 .wpcf7-form {
-  color: #ffff; }
+  color: #ffff;
+  font-family: 'Exo 2'; }
   .wpcf7-form label {
     padding-left: 10px; }
   .wpcf7-form .wpcf7-textarea {
@@ -815,6 +854,8 @@ textarea {
   .wpcf7-form .wpcf7-submit {
     background-color: #222222;
     font-size: 1.5rem;
+    font-family: 'Exo 2';
+    font-weight: 100;
     padding: 10px 40px;
     border: 2px solid #00cc00;
     color: #00cc00;
@@ -822,3 +863,57 @@ textarea {
             box-shadow: none;
     text-shadow: none;
     margin: 30px 0px 70px 10px; }
+
+.archive-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100;
+  margin: 30px 10px;
+  font-size: 1.3rem;
+  word-spacing: .5rem;
+  line-height: 2rem; }
+  @media screen and (min-width: 600px) {
+    .archive-site-main {
+      margin: 70px 10px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .archive-site-main {
+      font-size: 2rem;
+      text-align: center; } }
+  .archive-site-main .archive-title {
+    color: #ffff;
+    text-transform: uppercase; }
+  .archive-site-main .quotes-title {
+    color: #ffff;
+    text-transform: uppercase; }
+  .archive-site-main .categories-title {
+    color: #ffff;
+    text-transform: uppercase; }
+  .archive-site-main .tags-title {
+    color: #ffff;
+    text-transform: uppercase; }
+
+.entry-content {
+  color: #ffff;
+  font-family: 'Exo 2';
+  font-weight: 100; }
+
+.page-title {
+  color: #ffff;
+  font-family: 'Exo 2';
+  font-weight: 100; }
+
+.single-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100;
+  margin: 30px 10px;
+  font-size: 1.3rem;
+  word-spacing: .5rem;
+  line-height: 2rem; }
+  @media screen and (min-width: 600px) {
+    .single-site-main {
+      margin: 70px 10px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .single-site-main {
+      font-size: 2rem;
+      text-align: center; } }

@@ -10,7 +10,6 @@
             url: red_vars.rest_url + '/wp/v2/posts?filter[posts_per_page]=1&filter[orderby]=rand',
             
         }).done(function (data) {
-            console.log(data);
             $('.main-quote').css('display', 'none');
             $('.author-main-quote').css('display', 'none');
             quoteContainer.append(`<h1 class='main-quote'>${data[0].content.rendered}</h1> <h2 class='author-main-quote'>-- ${data[0].title.rendered}, </h2>`);
@@ -34,11 +33,11 @@ $('.wpcf7-form').on('submit', function (event) {
     
      },
      beforeSend: function(xhr) {
-       xhr.setRequestHeader("X-WP-Nonce", red_vars.wpapi_nonce);
+       xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
      }
- }).done(function(data) {
-     alert("Thanks for your contribution!");
- }).fail(function(data) {
-     alert("Uh Oh, there was an error try again later!");
+ }).done(function() {
+     alert('Thanks for your contribution!');
+ }).fail(function() {
+     alert('Uh Oh, there was an error try again later!');
  })
 });

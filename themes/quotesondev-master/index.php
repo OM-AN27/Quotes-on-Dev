@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<section class='quotes-container' >
-		<i class="fa fa-quote-left font-awesome-quotes"></i>
+		<!-- <i class="fa fa-quote-left awesome-quote"></i> -->
 						<h1><?php
 							$args = array( 'post_type' => 'post', 'orderby' => 'rand',
 							'order'    => 'ASC',  'posts_per_page' => 1 );
@@ -21,14 +21,14 @@ get_header(); ?>
 							echo '<h2 class="author-main-quote">-- ' . $posts[0]->post_title .  ' </h2>';
 						?>
 			</h1>	
-			<i class="fa fa-quote-right font-awesome-quotes"></i>		
+			<!-- <i class="fa fa-quote-right awesome-quote"></i>		 -->
 		</section>
-
+		
 		<div class='button-container'>
 			<button class='main-button'>Show Me Another!</button>
-</div>
-			
-		</main><!-- #main -->
+		</div>
+		
+	</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
