@@ -136,7 +136,12 @@ body {
 
 }
 
-
+.button-container {
+	@include desktop{
+	display: flex;
+	justify-content: center;
+	}
+}
 
 .main-button {
 	background-color:$color_background-main ;
@@ -167,7 +172,17 @@ body {
 
 // ABOUT 
 
+
+
 .about-text {
+
+	@include tablet {
+		font-size: 1.6rem;
+	}
+
+	@include desktop {
+		text-align: center;
+	}
 
 
 	.quotes-link{
@@ -177,9 +192,7 @@ body {
 	}
 }
 
-.page-header {
-	color: $text__white;
-}
+
 
 .page-content {
 	p {
@@ -190,10 +203,16 @@ body {
 
 //SUBMIT A QUOTE 
 
+
+
 .entry-title {
 	color:$text__white;
-	margin-top: 20px;
+	margin-top: 50px;
 	padding-left: 10px;
+}
+
+textarea {
+	width: 80%;
 }
 
 .wpcf7-form {
@@ -203,16 +222,44 @@ body {
 
 	}
 
+	.wpcf7-textarea {
+	color: $text__white;
+	background-color:$color_background-main ;
+	font-size: 1.5rem;
+	padding: 10px 30px;
+	border: 2px solid $color_green-text;
+	box-shadow: none;
+	text-shadow: none;
+	margin: 15px;
+	}
+
+
 	.wpcf7-text  {
 	color: $text__white;
 	background-color:$color_background-main ;
 	font-size: 1.5rem;
 	padding: 10px 30px;
 	border: 2px solid $color_green-text;
-	color: $color_green-text;
 	box-shadow: none;
 	text-shadow: none;
 	margin: 15px;
+
+	}
+
+	.wpcf7-text:focus {
+		color:$text__white;
+	}
+
+
+	.wpcf7-submit {
+		background-color:$color_background-main ;
+		font-size: 1.5rem;
+		padding: 10px 40px;
+		border: 2px solid $color_green-text;
+		color: $color_green-text;
+		box-shadow: none;
+		text-shadow: none;
+		margin: 30px 0px 70px 10px;
 
 	}
 

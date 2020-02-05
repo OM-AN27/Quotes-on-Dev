@@ -14,17 +14,27 @@ footer {
     @include tablet {
         display: flex;
     }
+
+
 }
 
 
+.site-footer {
+    @include desktop {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10rem;
+    }
+}
+
 .copyright {
         
-    color: white;
+    color: $text__white;
     padding-left: 10px;
 
     @include tablet {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
 
     }
 
@@ -58,9 +68,9 @@ footer {
 
         padding: 0px 10px;
         display: inline-block;
-        border-right: 1px solid white;
+        border-right: 1px solid $text__white;
         @include tablet {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
 		
 	}

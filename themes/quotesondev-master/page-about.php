@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="about-site-main" role="main" style="color: white; padding: 10px 10px 50px 10px;">
+		<main id="main" class="about-site-main" role="main" style="color: white; padding: 20px 10px 70px 10px;">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

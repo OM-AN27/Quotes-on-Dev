@@ -24,7 +24,9 @@ get_header(); ?>
 			<i class="fa fa-quote-right font-awesome-quotes"></i>		
 		</section>
 
+		<div class='button-container'>
 			<button class='main-button'>Show Me Another!</button>
+</div>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
