@@ -3,7 +3,6 @@
     let quoteContainer = $('.quotes-container');
     
     $('.main-button').on('click', function (event) {
-        event.preventDefault();
         
         $.ajax({
             method: 'get',
@@ -35,9 +34,12 @@ $('.wpcf7-form').on('submit', function (event) {
      beforeSend: function(xhr) {
        xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
      }
+
  }).done(function() {
      alert('Thanks for your contribution!');
+
  }).fail(function() {
      alert('Uh Oh, there was an error try again later!');
  })
+
 });

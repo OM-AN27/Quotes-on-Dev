@@ -105,14 +105,34 @@ body {
 a {
 	text-decoration: none;
 	color: $color_green-text;
-
+	
 	&:hover {
 		color:#0e850e;
 	}
-
+	
 	&:visited {
 		color: $color_green-text;
 	}
+}
+
+fieldset {
+	border: none;
+}
+
+input[type='search']{
+	border: 2px solid $color_green-text;
+	color:$text__white;
+
+	&:focus {
+		color:$text__white;
+
+	}
+}
+
+input[type="submit"]:hover {
+	box-shadow: none;
+	border: 2px solid $color_green-text;
+
 }
 
 
@@ -428,6 +448,72 @@ textarea {
 		text-align: center;
 	}
 }
+
+
+//404 page  && SEARCH
+
+.not-found-site-main {
+	font-family: 'Exo 2';
+	font-weight: 100;
+	margin: 30px 10px;
+	font-size: 1.3rem;
+	word-spacing: .5rem;
+	line-height: 2rem;
+
+	@include tablet{
+		margin:70px 10px;
+		font-size: 1.5rem;
+	}
+
+	@include desktop {
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+
+
+.search-submit {
+	display: none;
+}
+
+.search-field {
+	
+	background-color:$color_background-main ;
+	font-size: 1.5rem;
+	font-family: 'Exo 2';
+	font-weight: 100;
+	padding: 10px 40px;
+	box-shadow: none;
+	text-shadow: none;
+	margin: 30px 0px 70px 10px;
+
+}
+
+.search-site-main {
+	font-family: 'Exo 2';
+	font-weight: 100;
+	margin: 30px 10px;
+	font-size: 1.3rem;
+	word-spacing: .5rem;
+	line-height: 2rem;
+
+	.entry-summary {
+		color: $text__white;
+	}
+
+	@include tablet{
+		margin:70px 10px;
+		font-size: 1.5rem;
+	}
+
+	@include desktop {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+}
+
 
 
 

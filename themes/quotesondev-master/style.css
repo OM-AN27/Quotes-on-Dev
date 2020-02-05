@@ -715,6 +715,20 @@ a {
   a:visited {
     color: #00cc00; }
 
+fieldset {
+  border: none; }
+
+input[type='search'] {
+  border: 2px solid #00cc00;
+  color: #ffff; }
+  input[type='search']:focus {
+    color: #ffff; }
+
+input[type="submit"]:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #00cc00; }
+
 .quotes-container .font-awesome-quotes {
   display: none; }
   @media screen and (min-width: 1024px) {
@@ -915,5 +929,53 @@ textarea {
       font-size: 1.5rem; } }
   @media screen and (min-width: 1024px) {
     .single-site-main {
+      font-size: 2rem;
+      text-align: center; } }
+
+.not-found-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100;
+  margin: 30px 10px;
+  font-size: 1.3rem;
+  word-spacing: .5rem;
+  line-height: 2rem; }
+  @media screen and (min-width: 600px) {
+    .not-found-site-main {
+      margin: 70px 10px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .not-found-site-main {
+      font-size: 2rem;
+      text-align: center; } }
+
+.search-submit {
+  display: none; }
+
+.search-field {
+  background-color: #222222;
+  font-size: 1.5rem;
+  font-family: 'Exo 2';
+  font-weight: 100;
+  padding: 10px 40px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  margin: 30px 0px 70px 10px; }
+
+.search-site-main {
+  font-family: 'Exo 2';
+  font-weight: 100;
+  margin: 30px 10px;
+  font-size: 1.3rem;
+  word-spacing: .5rem;
+  line-height: 2rem; }
+  .search-site-main .entry-summary {
+    color: #ffff; }
+  @media screen and (min-width: 600px) {
+    .search-site-main {
+      margin: 70px 10px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .search-site-main {
       font-size: 2rem;
       text-align: center; } }
