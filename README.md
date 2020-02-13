@@ -24,7 +24,7 @@ wp REST API
 
 * run gulp on the git bash 
 
-*Done!
+
 
 
 
