@@ -1,4 +1,4 @@
-# Quotes on Developers - Project 5
+# Quotes on Developers
 
 Simple website using wordpress that takes users submissions to add new quotes that get displayed and randomized on the front page. 
 
