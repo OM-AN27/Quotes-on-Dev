@@ -1,6 +1,6 @@
 # Quotes on Developers
 
-![quotes_on_dev_website](themes/images/QoD.png)
+![quotes_on_dev_website](themes/quotesondev-master/images/QoD.png)
 
 Simple website using wordpress that takes users submissions to add new quotes that get displayed and randomized on the front page. 
 

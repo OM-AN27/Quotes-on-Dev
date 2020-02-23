@@ -1,7 +1,7 @@
 {
-  "name": "quotesondev-starter",
+  "name": "quotesondev",
   "version": "1.0.0",
-  "description": "A WordPress starter theme for the Quotes on Dev project, forked from Underscores.",
+  "description": "A WordPress website that displays quotes from people/authors.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
